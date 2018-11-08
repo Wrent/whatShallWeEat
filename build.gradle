@@ -19,7 +19,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'cz.wrent'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
 	mavenCentral()
@@ -29,10 +29,10 @@ repositories {
 
 
 dependencies {
-	implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
+	compileOnly('org.projectlombok:lombok:1.18.4')
+	implementation('org.springframework.boot:spring-boot-starter-data-mongodb-reactive')
 	implementation('org.springframework.boot:spring-boot-starter-security')
-	implementation('org.springframework.boot:spring-boot-starter-web')
+	implementation('org.springframework.boot:spring-boot-starter-webflux')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
-	testImplementation('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
 	testImplementation('org.springframework.security:spring-security-test')
 }
