@@ -13,7 +13,7 @@ class URLBuilder {
   private final String cards;
   private final String suffix;
 
-  public URLBuilder(@Value("${trello.url.my-boards}") String myBoards,
+  URLBuilder(@Value("${trello.url.my-boards}") String myBoards,
       @Value("${trello.url.boards}") String boards,
       @Value("${trello.url.cards}") String cards,
       @Value("${trello.url.suffix}") String suffix) {
