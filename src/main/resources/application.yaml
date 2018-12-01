@@ -1,2 +1,7 @@
 trello:
-  url: https://api.trello.com/1/members/me/boards?key=${trello.api-key}&token=${trello.token}
+  url:
+    prefix: https://api.trello.com/1/
+    my-boards: members/me/boards/
+    boards: boards/
+    cards: cards/
+    suffix: ?key=${trello.api-key}&token=${trello.token}

@@ -1,4 +1,4 @@
-package cz.wrent.wswe.dataImport.trello.dto;
+package cz.wrent.wswe.trelloDataImport.trello.dto;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
